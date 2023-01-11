@@ -4,7 +4,7 @@
   font-family: 'Joseif Sans', sans-serif;
   box-sizing: border-box;
 }
-.hero{
+body{
   height: 100vh;
   width: 100%;
   background-image: url(../img/pic-1.jpg);
@@ -43,15 +43,13 @@ nav ul li a{
   text-transform: capitalize;
 }
 .content{
-  position: absolute;
-  top: 50%;
-  left: 8%;
-  transform: translateY(-50%);
+  position: relative;
+  text-align: center;
 }
-h1{
+.content h1{
   color: white;
   margin: 20px 0px 20px;
-  font-size: 75px;
+  font-size: 50px;
 }
 h3{
   color: white;
@@ -63,33 +61,6 @@ h4{
   letter-spacing: 2px;
   font-size: 20px;
 }
-.row{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-.column{
-  --gap: 16px;
-  --num-cols: 4;
-  --row-height: 300px;
-  flex: 50%;
-  padding: 0 4px;
-
-  box-sizing: border-box;
-  padding: var(--gap);
-
-  display: grid;
-  grid-template-columns: repeat(var(--num-cols), 1fr);
-  grid-auto-rows: var(--row-height);
-  gap: var(--gap);
-}
-.column > img{
-  width: 100%;
-  height: 100%;
-  margin-top: 8px;
-  vertical-align: middle;
-  object-fit: cover;
-}
 .footer-menu{
   height: auto;
   width: 100%;
@@ -99,5 +70,45 @@ h4{
   background-size: cover;
   background-position: center;
 }
-]
-
+.footer-menu h3{
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+.contact-form{
+  position: relative;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+}
+.contact-form form{
+  width: 680px;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+}
+.contact-form form input:first-child{
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.contact-form form input:last-child{
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-image: url(../img/img-2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000 ;
+  letter-spacing: 2px;
+  top: 6px;
+  right: 6px;
+}
